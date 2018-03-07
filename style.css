@@ -1,0 +1,19 @@
+h1{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	font-size:36px;
+	color:#666;
+}
+
+h1:after {
+  display:block;
+  content: '';
+  border-bottom: solid 3px #019fb6;  
+  transform: scaleX(0.0001);  
+  transition: transform 250ms ease-in-out;
+}
+h1:hover:after {
+  transform: scaleX(1);
+}
